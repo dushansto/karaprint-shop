@@ -37,3 +37,35 @@ img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button,inp
 .product-photo-label{position:absolute;left:17px;bottom:15px;z-index:1;padding:7px 9px;background:#f8f3e8;color:#222;font-size:9px;letter-spacing:.1em;font-weight:800;line-height:1}
 .intro .section-heading .photo-note{display:block;font-size:11px;line-height:1.5;color:#7a766e;margin-top:12px}
 @media(prefers-reduced-motion:reduce){.product-photo img{transition:none}}
+
+/* Vector icons avoid iOS replacing decorative Unicode with colourful emoji. */
+.asterisk,.arrow-mark{display:inline-block;width:1em;height:1em;flex:none;background-color:currentColor;vertical-align:-.12em;-webkit-mask-position:center;-webkit-mask-repeat:no-repeat;-webkit-mask-size:contain;mask-position:center;mask-repeat:no-repeat;mask-size:contain}
+.asterisk{-webkit-mask-image:url("assets/star.svg");mask-image:url("assets/star.svg")}
+.arrow-mark{-webkit-mask-image:url("assets/arrow-up-right.svg");mask-image:url("assets/arrow-up-right.svg")}
+.hero-orbit:after{content:"";width:37px;height:37px;top:34px;background-color:currentColor;-webkit-mask:url("assets/star.svg") center / contain no-repeat;mask:url("assets/star.svg") center / contain no-repeat}
+.statement-star{display:block;width:1em;height:1em;background-color:currentColor;-webkit-mask:url("assets/star.svg") center / contain no-repeat;mask:url("assets/star.svg") center / contain no-repeat}
+.statement-side .asterisk{font-size:48px;color:var(--orange)}
+.equipment-note .asterisk{font-size:18px;color:#c16d00;margin-right:8px}
+.form-heading .asterisk{font-size:22px;color:#c36c00}
+.world-symbol{display:block;width:1em;height:1em;background-color:currentColor}
+@media(max-width:560px){.hero-orbit:after{width:25px;height:25px;top:18px}}
+
+/* Two identical groups meet at the midpoint of the animated track. */
+.ticker-track{display:flex;width:max-content;min-width:0;animation:none;white-space:nowrap}
+.ticker-group{display:flex;flex:none;align-items:center}
+.ticker-item{display:inline-flex;flex:none;align-items:center;padding:0 23px;white-space:nowrap}
+.ticker-item .asterisk{color:var(--orange);font-size:19px;margin-left:23px}
+.ticker.is-ready .ticker-track{animation:ticker var(--ticker-duration,34s) linear infinite}
+@media(prefers-reduced-motion:reduce){.ticker.is-ready .ticker-track{animation:none}}
+
+/* Keep the language switch visible even when the mobile menu is closed. */
+.primary-nav{margin-left:auto}
+.language-switch{display:flex;align-items:center;gap:7px;margin-left:24px;font-size:11px;letter-spacing:.12em;font-weight:800;white-space:nowrap}
+.language-switch a{padding:5px 3px;color:#756f64;transition:color .2s}
+.language-switch a:hover,.language-switch a[aria-current="page"]{color:var(--ink)}
+.language-switch a[aria-current="page"]{border-bottom:2px solid var(--orange-hot)}
+.language-switch span{color:#a9a397}
+@media(max-width:800px){.language-switch{margin-left:auto;margin-right:9px}.menu-toggle{flex:none}.primary-nav{margin-left:0}}
+
+.contact-email{margin-top:18px!important;font-size:17px!important;font-weight:800;color:var(--ink)!important;overflow-wrap:anywhere}
+.contact-email a{border-bottom:2px solid var(--orange-hot);padding-bottom:3px}
