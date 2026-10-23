@@ -1,4 +1,4 @@
-# KARAT website — GitHub Pages
+# KARA website — GitHub Pages
 
 Статичка веб-страна за [karaprint.shop](https://karaprint.shop/). Содржината се објавува од коренот на GitHub репозиториумот преку **Settings → Pages → Deploy from a branch → main / (root)**.
 

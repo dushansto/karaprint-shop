@@ -2,14 +2,14 @@ const isEnglish = document.documentElement.lang === 'en';
 const copy = isEnglish ? {
   openMenu: 'Open menu', closeMenu: 'Close menu',
   choose: 'Please choose what you would like to make.',
-  subject: 'Quote request — KARAT', product: 'Product', quantity: 'Quantity',
+  subject: 'Quote request — KARA', product: 'Product', quantity: 'Quantity',
   deadline: 'Desired deadline', delivery: 'Delivery', details: 'Details',
   discuss: 'to be discussed',
   opened: 'Your email app will open with the inquiry filled in. Please send it to contact@karaprint.shop.'
 } : {
   openMenu: 'Отвори мени', closeMenu: 'Затвори мени',
   choose: 'Изберете што сакате да изработите.',
-  subject: 'Барање за понуда — KARAT', product: 'Производ', quantity: 'Количина',
+  subject: 'Барање за понуда — KARA', product: 'Производ', quantity: 'Количина',
   deadline: 'Посакуван рок', delivery: 'Испорака', details: 'Детали',
   discuss: 'за договор',
   opened: 'Ќе се отвори вашата апликација за е-пошта со пополнето барање. Испратете го на contact@karaprint.shop.'
